@@ -1,57 +1,45 @@
 # Cloud Basics Using AWS 
-
 ## Objective
-To understand basic cloud infrastructure by launching an AWS EC2 Linux instance, connecting via SSH, installing a web server, and hosting a simple webpage.
+To understand fundamental cloud concepts by launching an AWS EC2 Linux instance, connecting via SSH, installing a web server, and hosting a simple web page using AWS Free Tier.
 
-## Tools Used
-- AWS EC2 
+## Technologies Used
+- AWS EC2 (t2.micro – Free Tier)
 - Ubuntu Linux
 - Nginx Web Server
-- SSH Client (Git Bash)
+- SSH
+- Security Groups
 
 ## Steps Performed
-### 1. Created AWS Free Tier Account
-- Logged into AWS Console  
-- Accessed EC2 Dashboard
+1. Created AWS Free Tier account and accessed EC2 dashboard  
+2. Launched Ubuntu EC2 instance with:
+   - t2.micro instance type  
+   - Key pair authentication  
+   - Security Group (22 & 80 ports)
 
-### 2. Launched EC2 Instance
-- AMI: Ubuntu 22.04  
-- Instance Type: t2.micro  
-- Created key pair: aws.pem  
-- Configured Security Group:
-  - Port 22 – SSH  
-  - Port 80 – HTTP
+3. Connected to instance using SSH  
+4. Installed Nginx web server  
+5. Accessed default web page using Public IP  
+6. Hosted custom HTML page  
+7. Stopped and terminated instance safely  
 
-### 3. Connected via SSH
-- Used key pair to securely access server from local machine.
+## Commands Used
+Refer to [commands.md](commands.md)
 
-### 4. Installed Web Server
-- Installed Nginx  
-- Started and enabled service
-
-### 5. Accessed Application
-- Opened browser using Public IP  
-- Verified default Nginx page  
-- Hosted custom HTML page
-
-### 6. Instance Management
-- Stopped instance after use  
-- Understood termination process
-
-## Architecture
-User → Internet → Security Group (22,80) → EC2 Ubuntu → Nginx Web Server → Web Page
-
-## Deliverables
-- EC2 running instance screenshot  
-- SSH connection terminal proof  
-- Web page accessed via Public IP
+## Output
+- Successfully connected to EC2 via SSH  
+- Apache web server hosted on Public IP  
+- Custom webpage displayed in browser  
 
 ## Learning Outcome
-- Understanding of cloud basics  
-- EC2 lifecycle  
-- Security groups  
-- SSH authentication  
-- Web hosting on Linux server
+- Understanding EC2 lifecycle  
+- SSH authentication mechanism  
+- Security Groups and inbound rules  
+- Hosting web application on cloud  
+- Basic Linux administration
+  
+## Screenshots
+1. EC2 Instance Running  
+2. SSH Connection Proof  
+3. Webpage Output
 
-## Conclusion
-Successfully launched and configured an AWS EC2 instance, hosted a web application, and understood fundamental cloud concepts using AWS Free Tier.
+(Screenshots are available in repository)
