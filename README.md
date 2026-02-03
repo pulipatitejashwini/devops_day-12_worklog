@@ -1,4 +1,3 @@
-# devops_day-12_worklog
 # Cloud Basics Using AWS 
 
 ## Objective
